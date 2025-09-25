@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Briefcase, MapPin, Clock, ArrowRight } from 'lucide-react';
 
 interface JobPosition {
@@ -87,8 +86,8 @@ const CareersPage = () => {
                       </div>
                     </div>
                   </div>
-                  <Link
-                    to={`/careers/${position.id}`}
+                  <button
+                    data-b24-form="click/8/orwxe3"
                     className="mt-4 md:mt-0 inline-flex items-center bg-blue-800 hover:bg-blue-700 text-white py-2 px-6 rounded-sm font-medium transition-all duration-300 group"
                   >
                     <span>Apply Now</span>
@@ -96,7 +95,7 @@ const CareersPage = () => {
                       size={16} 
                       className="ml-2 transform group-hover:translate-x-1 transition-transform duration-300" 
                     />
-                  </Link>
+                  </button>
                 </div>
                 <p className="text-gray-300">{position.description}</p>
               </div>
